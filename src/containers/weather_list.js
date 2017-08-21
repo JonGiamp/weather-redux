@@ -52,9 +52,5 @@ class WeatherList extends Component {
   }
 }
 
-// const mapStateToProps = (state) => { weather: state.weather };
-// Equivalent to :
 const mapStateToProps = ({ weather }) => { return {weather} };
-// ({weather}) equivalent à state.weather
-// return {weather} equivalent à { weather: weather }
 export default connect(mapStateToProps)(WeatherList);
